@@ -1,0 +1,33 @@
+{
+    "name": "polus/polus-modules",
+    "homepage": "https://github.com/polusphp/polus-modules",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Sundqvist",
+            "email": "andreas@forme.se"
+        }
+    ],
+    "require": {
+        "sunkan/actus": "^1.0",
+        "aura/di": "2.*",
+        "php": ">=5.6.0"
+    },
+    "require-dev": {
+        "silex/silex": "~1.2",
+        "polus/polus": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Polus\\Modules\\": "src/",
+            "Polus\\Modules\\_Config\\": "config/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\_Config\\": "tests/config",
+            "Test\\Module\\": "tests/modules/test/src",
+            "Test\\Module\\_Config\\": "tests/modules/test/config"
+        }
+    }
+}
